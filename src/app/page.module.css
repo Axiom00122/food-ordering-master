@@ -1,0 +1,43 @@
+/* page.module.css */
+.about {
+  @apply flex flex-col md:flex-row items-center gap-8 my-16 max-w-6xl mx-auto;
+}
+
+.about-text {
+  @apply flex-1;
+}
+
+.about-img {
+  @apply flex-1 rounded-lg shadow-xl;
+}
+
+.stats {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-4 mt-8;
+}
+
+.stat {
+  @apply bg-secondary/10 p-4 rounded-lg text-center;
+}
+
+.stat strong {
+  @apply block text-2xl text-primary;
+}
+.locations-container {
+  @apply grid md:grid-cols-3 gap-8 mt-12;
+}
+
+.location-card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105;
+}
+
+.location-card img {
+  @apply w-full h-48 object-cover;
+}
+
+.location-card h3 {
+  @apply text-xl font-bold p-4;
+}
+
+.location-card p {
+  @apply px-4 pb-4 text-gray-600;
+}

@@ -1,0 +1,433 @@
+/* Home.module.css */
+
+/* Base Styles */
+.pageContainer {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  min-height: 80vh;
+  position: relative;
+}
+
+.heroContainer {
+  display: flex;
+  width: 100%;
+}
+
+.heroImage {
+  width: 50%;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.heroText {
+  width: 50%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.heroText h1 {
+  font-size: 3rem;
+  color: #D4AF37;
+  margin-bottom: 2rem;
+}
+
+.heroText h1 span {
+  color: #333;
+}
+
+.heroText p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.menuBoxBtn {
+  display: inline-block;
+  background-color: #D4AF37;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-align: center;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.menuBoxBtn:hover {
+  background-color: #C9A227;
+  transform: translateY(-3px);
+}
+
+/* About Section */
+.about {
+  display: flex;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+.aboutText {
+  flex: 1;
+}
+
+.aboutText h2 {
+  font-size: 2.5rem;
+  color: #D4AF37;
+  margin-bottom: 1.5rem;
+}
+
+.aboutText p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.stat {
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stat strong {
+  font-size: 2rem;
+  color: #D4AF37;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.aboutImg {
+  flex: 1;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Locations Section */
+.locationsSection {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.locationsSection h2 {
+  font-size: 2.5rem;
+  color: #D4AF37;
+  margin-bottom: 2rem;
+}
+
+.locationsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.locationCard {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.locationCard h3 {
+  color: #D4AF37;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.locationCard p {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.locationCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.address {
+  color: #666;
+  font-style: italic;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Maps Section */
+.mapSection {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.mapBox {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mapBox h3 {
+  color: #D4AF37;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Opening Hours */
+.openingHours {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.openingContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.openingImage {
+  flex: 1;
+}
+
+.openingImage img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.openingText {
+  flex: 1;
+}
+
+.openingText h2 {
+  font-size: 2rem;
+  color: #D4AF37;
+  margin-bottom: 1.5rem;
+}
+
+.openingText p {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.openingStats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.openingStats div {
+  text-align: center;
+}
+
+.openingStats h3 {
+  font-size: 2rem;
+  color: #D4AF37;
+  margin-bottom: 0.5rem;
+}
+
+.openingStats p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 3rem 2rem 1rem;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #444;
+}
+
+.footerColumn h4 {
+  color: #D4AF37;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerColumn li {
+  margin-bottom: 0.5rem;
+}
+
+.footerColumn a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footerColumn a:hover {
+  color: #D4AF37;
+}
+
+.newsletterForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.newsletterInput {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #444;
+  color: white;
+}
+
+.newsletterButton {
+  background-color: #D4AF37;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletterButton:hover {
+  background-color: #C9A227;
+}
+
+.footerBottom {
+  max-width: 1200px;
+  margin: 1rem auto 0;
+  text-align: center;
+  padding-top: 1rem;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.footerBottom a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footerBottom a:hover {
+  color: #D4AF37;
+}
+
+.footerAddresses {
+  margin-top: 1rem;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroContainer {
+    flex-direction: column;
+  }
+  
+  .heroImage,
+  .heroText {
+    width: 100%;
+  }
+  
+  .about {
+    flex-direction: column;
+  }
+  
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .openingContent {
+    flex-direction: column;
+  }
+  
+  .openingStats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+/* Smooth scrolling and section targeting */
+#locations {
+  scroll-margin-top: 100px;
+}
+
+#locations:target {
+  animation: highlight 1.5s ease;
+}
+
+@keyframes highlight {
+  0% { background-color: rgba(212, 175, 55, 0.1); }
+  100% { background-color: transparent; }
+}
+
+/* Newsletter form styles */
+.newsletterForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.newsletterInput {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.newsletterButton {
+  background-color: #D4AF37;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletterButton:hover {
+  background-color: #C9A227;
+}
+
+.footerAddresses {
+  margin-top: 1rem;
+  color: #aaa;
+  font-size: 0.9rem;
+}

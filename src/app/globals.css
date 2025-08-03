@@ -1,0 +1,118 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Base Styles */
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+:root {
+  --font-playfair: 'Playfair Display', serif;
+  --font-lato: 'Lato', sans-serif;
+}
+
+
+@keyframes navbarFadeDown {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero Section */
+.hero-container {
+  @apply relative h-[80vh] overflow-hidden;
+}
+
+.hero-image {
+  @apply w-full h-full object-cover;
+}
+
+.hero-text {
+  @apply absolute inset-0 flex flex-col justify-center items-center text-center text-white bg-black/40 p-6;
+}
+
+.hero-text h1 {
+  @apply text-4xl md:text-5xl font-bold mb-4;
+}
+
+.hero-text span {
+  @apply text-secondary; /* Gold color */
+}
+/* globals.css */
+.menu-box-btn {
+  @apply inline-block mt-8 px-8 py-3 bg-primary text-white rounded-full 
+         font-bold hover:bg-secondary transition-all duration-300;
+}
+@layer utilities {
+  .animation-delay-100 {
+    animation-delay: 0.1s;
+  }
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+  /* Add more as needed */
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Ensure proper stacking */
+header {
+  position: fixed;
+  overflow: hidden;
+}
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+@keyframes scrollFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade-up.visible {
+  animation: scrollFadeUp 0.6s ease-out forwards;
+}
+@media (max-width: 768px) {
+  .aboutText, .aboutImg {
+    width: 100%;
+    flex-direction: column;
+  }
+}
